@@ -21,9 +21,9 @@ void main(){
         daysInmonths[1] = 29;
 	}
 		//get the first day of the year
-		weekDays=(year*365+((year-1)/4)-((year-1)/100)+((year-1)/400))%7;
+	     weekDays=((year-1)*365+((year-1)/4)-((year-1)/100)+((year-1)/400))%7;
 
-		for(i=0;i<=10;i++){
+		for(i=0;i<=11;i++){
 			printf("\n---------------- %s ----------------\n",months[i]);
 			printf("\n  sun  mon   tue  wed  thu  fri  sat\n\n");
 		for(space=1;space<=weekDays;space++){
